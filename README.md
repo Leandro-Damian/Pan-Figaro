@@ -1,4 +1,4 @@
-# Responsive Bakery Website
+# Sitio web Panaderia Pan Figaro
 ## Figaro es el nombre de mi Gato
 
 - Diseño web adaptable hecho con HTML CSS & JavaScript
