@@ -1,64 +1,360 @@
 <!DOCTYPE html>
-   <html lang="en">
+   <html lang="es">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <!--=============== FAVICON ===============-->
       <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
-
-      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
       <link rel="stylesheet" href="assets/css/styles.css">
-
-      <title>Responsive bakery website - Bedimcode</title>
+      <title>Pan Figaro</title>
+      <meta name="description" content="Panadería artesanal con productos frescos, facturas, panes caseros y delicias horneadas todos los días. ¡Descubrí el sabor casero!">
+      <meta name="author" content="Leandro Damian Chumbita">
+      <meta name="keywords" content="panadería, pan casero, facturas, medialunas, productos artesanales, pan fresco, pastelería">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      <meta property="og:title" content="Panadería Artesanal - Pan Figaro">
+      <meta property="og:description" content="Descubrí nuestros productos frescos y caseros, horneados todos los días. ¡Visitanos o hacé tu pedido online!">
+      <meta property="og:url" content="https://tusitio.com"> <!--  escribir la url cuando esté     -->
+  <meta property="og:type" content="website">
    </head>
    <body>
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
-         
+         <nav class="nav container">
+            <a href="#" class="nav__logo">Pan Figaro</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link active-link">Inicio</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#new" class="nav__link">Noticias</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#about" class="nav__link">Sobre nosotros</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#favorite" class="nav__link">Favoritos</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#visit" class="nav__link">Ubicación</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+                </div>
+
+                <img src="assets/img/bread-4.png" alt="image" class="nav__img-1">
+                <img src="assets/img/bread-1.png" alt="image" class="nav__img-2">
+            </div>
+
+            <!-- Toggle button -->
+             <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-fill"></i>
+             </div>
+         </nav>
       </header>
 
-      <!--==================== MAIN ====================-->
       <main class="main">
          <!--==================== HOME ====================-->
          <section class="home section" id="home">
-            
+            <img src="assets/img/home-bg.jpg" alt="image" class="home__bg">
+            <div class="home__shadow"></div>
+
+            <div class="home__container container grid">
+               <div class="home__data">
+                  <h1 class="home__title">
+                     Seleccionar los panes <br> de mejor calidad
+                  </h1>
+
+                  <a href="#favorite" class="button">Elejir panes</a>
+
+                  <img src="assets/img/bread-1.png" alt="image" class="home__bread">
+               </div>
+
+               <div class="home__image">
+                  <img src="assets/img/home-bread.png" alt="image" class="home__img">
+               </div>
+
+               <footer class="home__footer">
+                  <div class="home__location">
+                     <i class="ri-map-pin-line"></i>
+                     <span>AV. Principal #321 <br> Tucumán, Argentina</span>
+                  </div>
+
+                  <div class="home__social">
+                     <a href="https://www.facebook.com/" target="_blank">
+                        <i class="ri-facebook-circle-line"></i>
+                     </a>
+
+                     <a href="https://www.instagram.com/" target="_blank">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+
+                     <a href="https://www.youtube.com/" target="_blank">
+                        <i class="ri-youtube-line"></i>
+                     </a>
+                  </div>
+               </footer>
+            </div>
          </section>
 
          <!--==================== NEWS ====================-->
          <section class="new section" id="new">
-            
+            <h2 class="section__title">Nuevos Panes</h2>
+
+            <div class="new__container container grid">
+               <div class="new__content grid">
+                  <article class="new__card">
+                     <div class="new__data">
+                        <h2 class="new__title">Pan de Centeno</h2>
+                        <p class="new__description">
+                           Horneado con masa madre saludable y sin gluten para una buena nutrición.
+                        </p>
+                     </div>
+
+                     <img src="assets/img/new-bread-1.png" alt="image" class="new__img">
+                  </article>
+
+                  <article class="new__card">
+                     <div class="new__data">
+                        <h2 class="new__title">Pan integral</h2>
+                        <p class="new__description">
+                           Crujientes y caseros, preparados con harina orgánica sin levadura.
+                        </p>
+                     </div>
+
+                     <img src="assets/img/new-bread-2.png" alt="image" class="new__img">
+                  </article>
+
+                  <article class="new__card">
+                     <div class="new__data">
+                        <h2 class="new__title">Pan multigrano</h2>
+                        <p class="new__description">
+                           Sabroso y elaborado con diferentes granos naturales del campo.
+                        </p>
+                     </div>
+
+                     <img src="assets/img/new-bread-3.png" alt="image" class="new__img">
+                  </article>
+               </div>
+
+               <a href="#" class="new__button button">Ver más panes</a>
+            </div>
          </section>
 
          <!--==================== ABOUT ====================-->
          <section class="about section" id="about">
-            
+            <div class="about__container container grid">
+               <div class="about__data">
+                  <h2 class="section__title">Sobre nosotros</h2>
+
+                  <p class="about__description">
+                     Elaboramos todo tipo de pan casero, manteniendo la tradición de utilizar solo los mejores ingredientes, elaborados con productos locales siempre que sea posible. Disponemos de una amplia gama de productos de panadería de café recién hechos.
+                  </p>
+
+                  <a href="#" class="button">Saber más</a>
+
+                  <img src="assets/img/bread-2.png" alt="image" class="about__bread">
+               </div>
+
+               <img src="assets/img/about-bread.png" alt="image" class="about__img">
+            </div>
          </section>
          
          <!--==================== FAVORITES ====================-->
          <section class="favorite section" id="favorite">
-            
+            <h2 class="section__title">Favoritos de los clientes</h2>
+
+            <div class="favorite__container container grid">
+               <article class="favorite__card">
+                  <img src="assets/img/favorite-bread-1.png" alt="image" class="favorite__img">
+
+                  <div class="favorite__data">
+                     <h2 class="favorite__title">Grano integral</h2>
+                     <span class="favorite__subtitle">Pan</span>
+                     <h3 class="favorite__price">$6.00</h3>
+                  </div>
+
+                  <button class="favorite__button button">
+                     <i class="ri-add-line"></i>
+                  </button>
+               </article>
+
+               <article class="favorite__card">
+                  <img src="assets/img/favorite-bread-2.png" alt="image" class="favorite__img">
+
+                  <div class="favorite__data">
+                     <h2 class="favorite__title">Centeno</h2>
+                     <span class="favorite__subtitle">Pan</span>
+                     <h3 class="favorite__price">$8.00</h3>
+                  </div>
+
+                  <button class="favorite__button button">
+                     <i class="ri-add-line"></i>
+                  </button>
+               </article>
+
+               <article class="favorite__card">
+                  <img src="assets/img/favorite-bread-3.png" alt="image" class="favorite__img">
+
+                  <div class="favorite__data">
+                     <h2 class="favorite__title">Trigo</h2>
+                     <span class="favorite__subtitle">Pan</span>
+                     <h3 class="favorite__price">$3.00</h3>
+                  </div>
+
+                  <button class="favorite__button button">
+                     <i class="ri-add-line"></i>
+                  </button>
+               </article>
+
+               <article class="favorite__card">
+                  <img src="assets/img/favorite-bread-4.png" alt="image" class="favorite__img">
+
+                  <div class="favorite__data">
+                     <h2 class="favorite__title">Multigrano</h2>
+                     <span class="favorite__subtitle">Pan</span>
+                     <h3 class="favorite__price">$5.00</h3>
+                  </div>
+
+                  <button class="favorite__button button">
+                     <i class="ri-add-line"></i>
+                  </button>
+               </article>
+
+               <article class="favorite__card">
+                  <img src="assets/img/favorite-bread-5.png" alt="image" class="favorite__img">
+
+                  <div class="favorite__data">
+                     <h2 class="favorite__title">De masa fermentada</h2>
+                     <span class="favorite__subtitle">Pan</span>
+                     <h3 class="favorite__price">$7.00</h3>
+                  </div>
+
+                  <button class="favorite__button button">
+                     <i class="ri-add-line"></i>
+                  </button>
+               </article>
+
+               <article class="favorite__card">
+                  <img src="assets/img/favorite-bread-6.png" alt="image" class="favorite__img">
+
+                  <div class="favorite__data">
+                     <h2 class="favorite__title">Francesa</h2>
+                     <span class="favorite__subtitle">Pan</span>
+                     <h3 class="favorite__price">$3.00</h3>
+                  </div>
+
+                  <button class="favorite__button button">
+                     <i class="ri-add-line"></i>
+                  </button>
+               </article>
+            </div>
          </section>
 
          <!--==================== VISIT ====================-->
          <section class="visit section" id="visit">
-            
+            <div class="visit__container">
+               <img src="assets/img/visit-bg.jpg" alt="image" class="visit__bg">
+               <div class="visit__shadow"></div>
+
+               <div class="visit__content container grid">
+                  <div class="visit__data">
+                     <h2 class="section__title">Visítanos</h2>
+
+                     <p class="visit__description">
+                        Descubre el mejor pan, esperamos tu visita.
+                     </p>
+
+                     <a href="#" class="button">Ver ubicación</a>
+                  </div>
+               </div>
+            </div>
          </section>
       </main>
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">
-         
+         <div class="footer__container container grid">
+            <div>
+               <a href="#" class="footer__logo">Pan Figaro</a>
+               <p class="footer__description">
+                  Hacemos el mejor pan <br> de la ciudad.
+               </p>
+            </div>
+
+            <div class="footer__content grid">
+               <div>
+                  <h3 class="footer__title">Dirección</h3>
+
+                  <ul class="footer__list">
+                     <li>
+                        <address class="footer__info">AV. Principal #321 <br> Tucumán Argentina</address>
+                     </li>
+
+                     <li>
+                        <address class="footer__info">9AM - 13PM</address>
+                     </li>
+                  </ul>
+               </div>
+
+               <div>
+                  <h3 class="footer__title">Contacto</h3>
+
+                  <ul class="footer__list">
+                     <li>
+                        <address class="footer__info">panfigaro@gmail.com</address>
+                     </li>
+
+                     <li>
+                        <address class="footer__info">+0381 644 9625</address>
+                     </li>
+                  </ul>
+               </div>
+
+               <div>
+                  <h3 class="footer__title">Síguenos</h3>
+
+                  <div class="footer__social">
+                     <a href="https://www.facebook.com/" target="_blank">
+                        <i class="ri-facebook-circle-line"></i>
+                     </a>
+
+                     <a href="https://www.instagram.com/" target="_blank">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+
+                     <a href="https://www.youtube.com/" target="_blank">
+                        <i class="ri-youtube-line"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <img src="assets/img/bread-4.png" alt="image" class="footer__img-1">
+            <img src="assets/img/bread-3.png" alt="image" class="footer__img-2">
+         </div>
+
+         <span class="footer__copy">
+            &#169; Leandro Chumbita - Técnico Sup. en programación
+         </span>
       </footer>
 
       <!--========== SCROLL UP ==========-->
-      
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+      <script src="assets/js/scrollreveal.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
